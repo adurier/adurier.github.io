@@ -16,44 +16,10 @@ not_in_nav: |
   /helper.md
 
 theme:
-    name: 'material'
-    features:
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.expand # "the left sidebar will expand all collapsible subsections by default"
-    - navigation.path
-    - navigation.sections
-#    - navigation.footer
-#    - toc.follow
-    - navigation.indexes
+    name: 'dracula'
     logo: assets/logo.png
     icon:
       repo: fontawesome/brands/git-alt
-
-
-    palette:
-
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep orange
-      accent: purple
-      toggle:
-        icon: material/brightness-4
-        name: Switch to dark mode
-
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue grey
-      accent: blue
-      toggle:
-        icon: material/brightness-7
-        name: Switch to light mode
 
 # Extensions
 markdown_extensions:
