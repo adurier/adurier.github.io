@@ -1,10 +1,14 @@
 site_name: Adrien Durier
-site_url: ""
+site_url: "https://adurier.github.io/"
 # Empty for local (or multiple domain?) use. Otherwise, use https://adurier.github.io/ or...
 
 nav:
   - Home: 'index.md'
-  - Enseignement: 'teaching/index.md' 
+  - Enseignement: 
+    - 'teaching/index.md'
+    - Enseignements passés: 'teaching/teaching.md'
+    - Cours de Logique: 'https://adurier.github.io/logic-course'
+    - Cours de Programmation Fonctionnelle: 'https://adurier.github.io/func-prog'
   - Publications: 'publis.md'
   - A propos: 'about.md' 
 
@@ -13,6 +17,22 @@ not_in_nav: |
 
 theme:
     name: 'material'
+    features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand # "the left sidebar will expand all collapsible subsections by default"
+    - navigation.path
+#    - navigation.footer
+#    - toc.follow
+    logo: assets/logo.png
+    icon:
+      repo: fontawesome/brands/git-alt
+
+
     palette:
 
     # Light mode
@@ -75,12 +95,17 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-
-  - toc:
-      permalink: true
+#  - toc:
+#      permalink: true
+      
+repo_url: https://github.com/adurier/adurier.github.io
+extra:
+  social:
+  - icon: fontawesome/brands/github 
+    link: https://github.com/adurier
 
 plugins:
-  - search
+#  - search
 #  - roamlinks
   - obsidian-bridge
   - callouts
