@@ -4,7 +4,7 @@ site_url: ""
 
 nav:
   - Home: 'index.md'
-  - Enseignement: '/teaching/index.md' 
+  - Enseignement: 'teaching/index.md' 
   - Publications: 'publis.md'
   - A propos: 'about.md' 
 
@@ -45,7 +45,7 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 # - pymdownx.superfences
-# - pymdownx.magiclink
+  - pymdownx.magiclink
   - pymdownx.tasklist:
       custom_checkbox: true
   - def_list
