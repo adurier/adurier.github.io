@@ -5,7 +5,7 @@ site_url: "https://adurier.github.io/"
 nav:
   - Home: 'index.md'
   - Enseignement: 
-    - 'teaching/index.md'
+#    - 'teaching/index.md'
     - Enseignements passés: 'teaching/teaching.md'
     - Cours de Logique: 'https://adurier.github.io/logic-course'
     - Cours de Programmation Fonctionnelle: 'https://adurier.github.io/func-prog'
