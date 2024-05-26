@@ -5,7 +5,8 @@ name: ci
 on:
   push:
     branches:
-      - dracula-theme
+      - master
+      - main
 permissions:
   contents: write
 jobs:
@@ -21,9 +22,7 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-#      - run: pip install mkdocs-material
-      - run: pip install mkdocs-dracula-theme
-      - run: pip install pymdown-extensions
+      - run: pip install mkdocs-material
       - run: pip install mkdocs-obsidian-bridge
       - run: pip install mkdocs-callouts
 #     - run: pip install mkdocs-rss-plugin
