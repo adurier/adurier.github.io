@@ -1,0 +1,116 @@
+site_name: Adrien Durier
+site_url: "https://adurier.github.io/"
+# Empty for local (or multiple domain?) use. Otherwise, use https://adurier.github.io/ or...
+
+nav:
+  - Home: 'teaching/test.md'
+  - Enseignements passés: 'teaching/teaching.md'
+  - Cours de Logique: 'la'
+  - Cours de Programmation Fonctionnelle: 'la'
+  - Publications: 'publis.md'
+  - A propos: '/about.md' 
+not_in_nav: |
+  /helper.md
+
+theme:
+    name: 'material'
+    features:
+    - navigation.instant
+#    - navigation.instant.prefetch -> locked for insiders 
+#    - navigation.instant.progress -> locked for insiders 
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand # "the left sidebar will expand all collapsible subsections by default"
+    - navigation.path
+    - navigation.sections
+#    - navigation.footer
+#    - toc.follow
+    - navigation.indexes
+    logo: assets/logo.png
+    icon:
+      repo: fontawesome/brands/git-alt
+
+
+    palette:
+
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+# Extensions
+markdown_extensions:
+  - nl2br
+  - footnotes
+  - admonition
+  - abbr
+  - md_in_html
+  - tables
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+# - pymdownx.superfences
+  - pymdownx.magiclink
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+      pygments_lang_class: true
+      auto_title: true
+      linenums: true
+      linenums_style: pymdownx-inline
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+#  - toc:
+#      permalink: true
+      
+repo_url: https://github.com/adurier/adurier.github.io
+extra:
+  social:
+  - icon: fontawesome/brands/github 
+    link: https://github.com/adurier
+
+plugins:
+#  - search
+#  - roamlinks
+  - obsidian-bridge
+  - callouts
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js 
