@@ -18,8 +18,8 @@ theme:
     name: 'material'
     features:
     - navigation.instant
-#    - navigation.instant.prefetch -> locked for insiders 
-#    - navigation.instant.progress -> locked for insiders 
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
@@ -110,6 +110,7 @@ plugins:
 #  - roamlinks
   - obsidian-bridge
   - callouts
+  - projects
 
 extra_javascript:
   - javascripts/mathjax.js

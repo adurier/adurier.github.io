@@ -3,14 +3,9 @@ site_url: "https://adurier.github.io/"
 # Empty for local (or multiple domain?) use. Otherwise, use https://adurier.github.io/ or...
 
 nav:
-  - Home: 'teaching/test.md'
-  - Enseignements passés: 'teaching/teaching.md'
-  - Cours de Logique: 'la'
-  - Cours de Programmation Fonctionnelle: 'la'
-  - Publications: 'publis.md'
-  - A propos: '/about.md' 
-not_in_nav: |
-  /helper.md
+  - Home: 'index.md'
+  - A propos: 'about.md' 
+  - Back: 'https://adurier.github.io'
 
 theme:
     name: 'material'
@@ -46,8 +41,8 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
-      accent: blue
+      primary: deep orange
+      accent: purple
       toggle:
         icon: material/brightness-7
         name: Switch to light mode
