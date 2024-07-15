@@ -103,6 +103,8 @@ plugins:
 #  - roamlinks
   - obsidian-bridge
   - callouts
+  - projects
+      hoisting: false
 
 extra_javascript:
   - javascripts/mathjax.js
