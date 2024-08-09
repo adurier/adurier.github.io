@@ -1,18 +1,6 @@
 site_name: Adrien Durier
-site_url: "https://adurier.github.io/"
+site_url: "https://adrien.durier.xyz/"
 # Empty for local (or multiple domain?) use. Otherwise, use https://adurier.github.io/ or...
-
-nav:
-  - Home: 'index.md'
-  - Enseignement: 
-#    - 'teaching/index.md'
-    - Enseignements passés: 'teaching/teaching.md'
-    - Cours de Logique: 'https://adurier.github.io/logic-course'
-    - Cours de Programmation Fonctionnelle: 'https://adurier.github.io/func-prog'
-  - Publications: 'publis.md'
-  - A propos: 'about.md' 
-not_in_nav: |
-  /helper.md
 
 theme:
     name: 'material'
@@ -39,7 +27,7 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep orange
+      primary: blue
       accent: purple
       toggle:
         icon: material/brightness-4
@@ -65,7 +53,6 @@ markdown_extensions:
   - attr_list
   - pymdownx.arithmatex:
       generic: true
-# - pymdownx.superfences
   - pymdownx.magiclink
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -102,9 +89,15 @@ markdown_extensions:
 repo_url: https://github.com/adurier/adurier.github.io
 extra:
   social:
-  - icon: fontawesome/brands/github 
-    link: https://github.com/adurier
-
+    - icon: fontawesome/brands/github 
+      link: https://github.com/adurier
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Français
+      link: /fr/
+      lang: fr
 plugins:
 #  - search
 #  - roamlinks
